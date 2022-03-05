@@ -10,7 +10,7 @@ class Carro {
     }
 
 
-    fun toString():String{
+    override fun toString():String{
         return "Carro | identificador | data de aquisicao | pt.ulusofona.cm.kotlin.challenge.Posicao | x:0 | y:0"
     }
 }

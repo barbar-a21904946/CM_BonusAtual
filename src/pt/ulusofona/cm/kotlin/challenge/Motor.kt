@@ -11,7 +11,7 @@ class Motor {
         this.ligacao=ligacao
     }
 
-    fun toString():String{
+     override fun toString():String{
         return "Motor | cavalos | cilindrada"
     }
 }
