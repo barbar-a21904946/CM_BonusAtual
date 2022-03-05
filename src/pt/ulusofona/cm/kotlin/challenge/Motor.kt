@@ -12,6 +12,6 @@ class Motor {
     }
 
     fun toString():String{
-        return "pt.ulusofona.cm.kotlin.challenge.Motor | cavalos | cilindrada"
+        return "Motor | cavalos | cilindrada"
     }
 }

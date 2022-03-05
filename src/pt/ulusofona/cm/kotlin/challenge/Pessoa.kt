@@ -19,6 +19,6 @@ class Pessoa {
 
 
     override fun toString():String{
-       return "pt.ulusofona.cm.kotlin.challenge.Pessoa | nome | data de nascimento | pt.ulusofona.cm.kotlin.challenge.Posicao | x:0 | y:0"
+       return "Pessoa | nome | data de nascimento | pt.ulusofona.cm.kotlin.challenge.Posicao | x:0 | y:0"
     }
 }

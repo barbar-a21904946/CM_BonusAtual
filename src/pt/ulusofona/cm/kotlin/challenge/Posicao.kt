@@ -10,6 +10,6 @@ class Posicao{
    }
 
     override fun toString():String{
-        return "pt.ulusofona.cm.kotlin.challenge.Posicao | x:0 | y:0"
+        return "Posicao | x:0 | y:0"
     }
 }
