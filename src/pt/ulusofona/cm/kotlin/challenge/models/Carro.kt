@@ -1,6 +1,6 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
-class Carro : Motor{
+class Carro : Veiculo(),Movimentavel,Ligavel{
     var identificador:String
     var motor : Motor
 
