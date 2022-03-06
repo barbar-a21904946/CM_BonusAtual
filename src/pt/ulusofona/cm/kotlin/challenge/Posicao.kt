@@ -8,7 +8,9 @@ class Posicao{
        this.x=x;
        this.y=y;
    }
-
+fun alterarPositionException(){
+    throw Exception("Quanto tentas um movimento para a posição onde já te encontras.")
+}
     override fun toString():String{
         return "Posicao | x:0 | y:0"
     }
