@@ -1,17 +1,16 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
-import pt.ulusofona.cm.kotlin.challenge.exceptions.AlterarPosicaoException
-import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoDesligadoException
-import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoLigadoException
+import pt.ulusofona.cm.kotlin.challenge.Motor
+
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 
 
-class Carro : Veiculo(identificador),Movimentavel,Ligavel{
-    var identificador:String
+abstract class Carro: Veiculo, Movimentavel,Ligavel{
+    override var identificador:String
     var motor : Motor
 
-    constructor(identificador:String, motor: Motor){
+    constructor(identificador:String, motor: Motor) : super() {
         this.identificador=identificador
         this.motor=motor
     }
