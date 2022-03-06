@@ -1,3 +1,6 @@
-package pt.ulusofona.cm.kotlin.challenge.models
+package pt.ulusofona.cm.kotlin.challenge.exceptions
 
-class VeiculoDesligadoException(message: String) : Exception(message) {}
+class VeiculoDesligadoException(message: String) : Exception(message) {
+
+
+}

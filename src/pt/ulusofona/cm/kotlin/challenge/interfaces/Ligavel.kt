@@ -3,5 +3,5 @@ package pt.ulusofona.cm.kotlin.challenge.interfaces
 interface Ligavel {
     fun ligar()
     fun desligar()
-    fun estaligafo():Boolean
+    fun estaligado():Boolean
 }

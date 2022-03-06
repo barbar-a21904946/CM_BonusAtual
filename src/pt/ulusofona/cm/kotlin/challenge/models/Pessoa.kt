@@ -1,8 +1,9 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
+import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
 
-class Pessoa {
+abstract class Pessoa : Movimentavel{
      var nome:String
      var veiculos:List<Veiculo>
      var dataDeNascimento:Date

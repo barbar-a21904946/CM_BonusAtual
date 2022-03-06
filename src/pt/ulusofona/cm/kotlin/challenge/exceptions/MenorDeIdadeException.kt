@@ -1,5 +1,5 @@
 package pt.ulusofona.cm.kotlin.challenge.exceptions
 
-class MenorDeIdadeException(){
+class MenorDeIdadeException(messagem : String) : Exception(messagem ){
 
 }
