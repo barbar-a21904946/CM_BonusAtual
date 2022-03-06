@@ -1,21 +1,21 @@
 package pt.ulusofona.cm.kotlin.challenge.models
+
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
 
-abstract class Veiculo : Movimentavel {
-    open lateinit var identificador:String
-    lateinit var posicao: Posicao
-    lateinit var dataDeAquisicao:Date
+abstract class Veiculo (open var identificador: String) : Movimentavel {
+    var posicao : Posicao = Posicao()
+    var datadeAquisicao : Date = Date()
+    var countPosicao:Int=0
+    var xi :Int=0
+    var xf: Int =0
+    var yi: Int =0
+    var yf: Int =0
 
-    constructor(identificador:String){
-        this.identificador=identificador
-    }
+    abstract override fun moverPara(x:Int, y:Int)
 
-    constructor()
+    abstract fun requerCarta(): Boolean
 
-    fun requerCarta():Boolean{
-        return true
 
-    }
 
 }
