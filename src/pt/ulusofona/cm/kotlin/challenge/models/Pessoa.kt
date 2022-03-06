@@ -6,7 +6,7 @@ import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoNaoEncontradoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
 
-class Pessoa(var nome: String, var datadenascimento: Date, override var x: Int, override var y: Int) : Movimentavel {
+class Pessoa(var nome: String, var datadenascimento: Date, override var x: Int=0, override var y: Int=0) : Movimentavel {
     var veiculos = mutableListOf<Veiculo>()
     var carta: Carta? = null
     var posicao: Posicao = Posicao()

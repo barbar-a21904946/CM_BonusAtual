@@ -2,7 +2,7 @@ package pt.ulusofona.cm.kotlin.challenge.models
 
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 
-data class Bicicleta(override var identificador: String, override var x: Int) : Veiculo(identificador), Movimentavel {
+data class Bicicleta(override var identificador: String, override var x: Int=0) : Veiculo(identificador), Movimentavel {
 
 
     override fun toString(): String {
